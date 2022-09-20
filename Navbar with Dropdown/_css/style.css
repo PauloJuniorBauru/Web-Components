@@ -1,7 +1,3 @@
-body {
-    background-color: var(--color1);
-}
-
 header {
     background-color: var(--color2);
 }
@@ -18,6 +14,11 @@ header #logo a {
 
 header #logo span {
     color: var(--color3);
+}
+
+header #logo #open,
+header #logo #close {
+    display: none;
 }
 
 header ul {
@@ -38,11 +39,16 @@ ul a {
     transition: .3s;
 }
 
-ul a:hover {
+ul a:hover, 
+ul a:hover #icon-expand {
     color: var(--color3);
 }
 
-.material-symbols-outlined {
+ul label {
+    cursor: pointer;
+}
+
+ul #icon-expand {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,

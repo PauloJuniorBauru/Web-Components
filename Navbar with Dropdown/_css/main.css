@@ -8,10 +8,8 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    
-    --color6: #22242b;
 
-    --color1: #ddd;
+    --color1: #22242b;
     --color2: #45484e;
     --color3: #FF000A;
     --color4: #ffba00;
@@ -29,7 +27,7 @@
 
 .center {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 

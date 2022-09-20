@@ -11,9 +11,20 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="btn-nav">
         <div class="center">
             <div id="logo">
                 <h1><a href="#">My <span>Logo</span></a></h1>
+
+                <label for="btn-nav">
+                    <span id="open" class="material-symbols-outlined">
+                        menu
+                    </span>
+
+                    <span id="close" class="material-symbols-outlined">
+                        close
+                    </span>
+                </label>
             </div>
             
             <nav>
@@ -25,7 +36,7 @@
                     <li>
                         <label for="services">
                             <a>Services
-                                <span class="material-symbols-outlined">
+                                <span id="icon-expand" class="material-symbols-outlined">
                                     expand_more
                                 </span>
                             </a>

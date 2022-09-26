@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <style>
+        /* CSS - Hamburger Menu */
+        * { box-sizing: border-box; }
+
+        #hamburger-menu {  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 10em;
+            height: 8em;
+            cursor: pointer;
+            padding: 1em;
+            font-size: 1em;  /* Altere o tamanho do BOTÃO por Aqui! */
+            
+            border: .2em solid red;  /* Border Opcional */
+        }
+
+        #hamburger-menu span {
+            width: 100%;
+            height: 1em;
+            background-color: red;
+            border-radius: 1em;
+            transition: .5s ease-in-out;
+        }
+
+        /* CSS ANIMATION */
+        input#check:checked ~ span#top {
+            rotate: 45deg;
+            translate: 0 2.3em;
+        }
+
+        input#check:checked ~ span#middle {
+            transform: translateX(-5em);
+            background-color: transparent;
+        }
+
+        input#check:checked ~ span#bottom {
+            rotate: -45deg;
+            translate: 0 -2.3em;
+        }
+
+        input#check { display: none; }
+    </style>
+</head>
+<body>
+    <label id="hamburger-menu" for="check">
+        <input type="checkbox" id="check">
+        
+        <span id="top"></span>
+        <span id="middle"></span>
+        <span id="bottom"></span>
+    </label>
+
+</body>
+</html>

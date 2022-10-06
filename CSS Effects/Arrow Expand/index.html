@@ -7,19 +7,20 @@
     <style>
         /* Arrow Expand - CSS ICON */
         .icon {
+            display: flex;
+            width: max-content;
             font-size: 1em;  /* Mudar o tamanho da seta por Aqui! */
-            display: inline-block;
+            padding-left: 0em;  /* Empurrar Horizontalmente Aqui! */
         }
 
         .arrow-expand {
             width: 1em;
             height: 1em;
-            display: block;
             border-top: .2em solid red;  
             border-right: .2em solid red;  
-            margin: .2em .4em;
+            margin: .4em 0;  /* Empurrar Verticalmente Aqui! */
             rotate: 45deg;
-            translate: -50%;
+            translate: -50%;  /* REMOVER se necessário */
         }
     </style>
 </head>
